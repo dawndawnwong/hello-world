@@ -1,4 +1,2 @@
-# hello-world
+# Leetcode
 
-Hi humans!
- Yeah!
