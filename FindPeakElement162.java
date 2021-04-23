@@ -1,4 +1,5 @@
 public class FindPeakElement162 {
+    // Time complexity: O(log N), Space complexity: O(1)
     public int findPeakElement(int[] nums) {
         int start = 0, end = nums.length - 1;
         while (start + 1 < end) {
