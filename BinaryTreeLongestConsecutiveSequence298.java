@@ -1,4 +1,5 @@
 public class BinaryTreeLongestConsecutiveSequence298 {
+    // Time complexity: O(n), Space complexity: O(n)
     private int result = 0;
 
     public int longestConsecutive(TreeNode root) {
@@ -8,7 +9,7 @@ public class BinaryTreeLongestConsecutiveSequence298 {
         return result;
     }
 
-    public void helper(TreeNode root, int curCount, int target) {
+    private void helper(TreeNode root, int curCount, int target) {
         if (root == null)
             return;
         if (root.val == target) {
