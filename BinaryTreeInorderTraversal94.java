@@ -9,7 +9,7 @@ public class BinaryTreeInorderTraversal94 {
         return result;
     }
 
-    public static void helper(TreeNode root, List<Integer> result) {
+    private void helper(TreeNode root, List<Integer> result) {
         if (root == null)
             return;
         helper(root.left, result);
