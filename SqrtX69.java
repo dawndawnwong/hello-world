@@ -1,4 +1,5 @@
 public class SqrtX69 {
+    // Time complexity : O(log N), Space complexity : O(1)
     public int mySqrt(int x) {
         if (x == 0)
             return 0;
