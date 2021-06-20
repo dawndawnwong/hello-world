@@ -6,15 +6,19 @@ public class SplitArrayLargestSum410 {
             end += n;
         }
 
-        while (start < end) {
+        while (start + 1 < end) {
             int mid = start + (end - start) / 2;
             if (canDivide(nums, mid, m)) {
                 end = mid;
             } else {
-                start = mid + 1;
+                start = mid;
             }
         }
-        return start;
+        if (canDivide(nums, start, m)) {
+            return start;
+        } else {
+            return end;
+        }
     }
 
     private boolean canDivide(int[] nums, int target, int m) {
